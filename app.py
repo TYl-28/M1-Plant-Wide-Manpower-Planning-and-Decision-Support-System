@@ -14,7 +14,6 @@ from openpyxl import load_workbook
 
 EXCEL_PATH = (
     Path(__file__).parent
-    / "data"
     / "M1_Manpower_Model_English_Final_v18_Gap_Analysis.xlsx"
 )
 
