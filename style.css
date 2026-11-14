@@ -1,0 +1,148 @@
+
+/* =========================================
+   M1 DSS - Dashboard Theme
+   ========================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+:root {
+    --primary: #244b78;
+    --primary-light: #eaf1fa;
+    --background: #f4f6fa;
+    --surface: #ffffff;
+    --text: #172b45;
+    --muted: #7b8798;
+    --border: #e7ecf2;
+}
+
+/* Main background */
+
+.stApp {
+    background: var(--background);
+    color: var(--text);
+    font-family: 'Inter', sans-serif;
+}
+
+/* Main content */
+
+.block-container {
+    max-width: 1500px;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+
+/* Sidebar */
+
+section[data-testid="stSidebar"] {
+    background: #ffffff;
+    border-right: 1px solid var(--border);
+}
+
+section[data-testid="stSidebar"] > div {
+    padding-top: 2rem;
+}
+
+section[data-testid="stSidebar"] h1 {
+    color: var(--primary);
+    font-weight: 800;
+}
+
+/* Main title */
+
+h1, h2, h3 {
+    color: var(--text) !important;
+    font-weight: 700 !important;
+    letter-spacing: -0.4px;
+}
+
+/* Section headings */
+
+h2 {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    margin-top: 1.2rem;
+}
+
+/* Metric cards */
+
+div[data-testid="stMetric"] {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 20px 22px;
+    box-shadow: 0 4px 14px rgba(27, 50, 78, 0.05);
+    min-height: 110px;
+}
+
+div[data-testid="stMetricLabel"] {
+    color: var(--muted);
+    font-size: 0.78rem;
+    font-weight: 600;
+}
+
+div[data-testid="stMetricValue"] {
+    color: var(--primary);
+    font-size: 1.9rem;
+    font-weight: 800;
+}
+
+/* Tables */
+
+div[data-testid="stTable"],
+div[data-testid="stDataFrame"] {
+    background: #ffffff;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* Charts */
+
+div[data-testid="stPlotlyChart"],
+div[data-testid="stArrowVegaLiteChart"] {
+    background: #ffffff;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 12px;
+    box-shadow: 0 4px 14px rgba(27, 50, 78, 0.04);
+}
+
+/* Divider */
+
+hr {
+    border-color: var(--border);
+}
+
+/* Information boxes */
+
+div[data-testid="stAlert"] {
+    border-radius: 12px;
+}
+
+/* Radio navigation */
+
+section[data-testid="stSidebar"] div[role="radiogroup"] {
+    gap: 0.55rem;
+}
+
+/* Captions */
+
+.stCaption {
+    color: var(--muted);
+}
+
+/* Buttons */
+
+.stButton button {
+    border-radius: 9px;
+    font-weight: 600;
+}
+
+/* Remove footer */
+
+footer {
+    visibility: hidden;
+}
