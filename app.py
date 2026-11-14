@@ -1,6 +1,6 @@
 
 from pathlib import Path
-from turtle import right
+
 
 import pandas as pd
 import plotly.express as px
